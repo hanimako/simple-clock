@@ -22,7 +22,7 @@ export default function Home() {
     const hours = date.getHours().toString().padStart(2, "0");
     const minutes = date.getMinutes().toString().padStart(2, "0");
     const seconds = date.getSeconds().toString().padStart(2, "0");
-    return `${hours}:${minutes}:${seconds}`;
+    return `${hours}時${minutes}分${seconds}秒`;
   };
 
   return (
@@ -35,16 +35,10 @@ export default function Home() {
         boxShadow="xl"
         textAlign="center"
       >
-        <Heading
-          as="h1"
-          size={{ base: "xl", md: "2xl" }} // スマホではxl, PCでは2xl
-          color="teal.500"
-        >
-          シンプルな時計
-        </Heading>
         <Text
           fontSize={{ base: "4xl", md: "6xl" }} // スマホでは4xl, PCでは6xl
           fontWeight="bold"
+          fontFamily="mono" // 等幅フォントを指定
           color="gray.700"
         >
           {formatTime(currentTime)}
