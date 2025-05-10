@@ -1,7 +1,7 @@
 "use client"; // クライアントコンポーネントとしてマーク
 
 import { useState, useEffect } from "react";
-import { Text, VStack, Heading, Center } from "@chakra-ui/react";
+import { Text, VStack, Center } from "@chakra-ui/react";
 
 export default function Home() {
   const [currentTime, setCurrentTime] = useState(new Date());
