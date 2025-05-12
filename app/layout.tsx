@@ -16,6 +16,10 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "シンプルな時計アプリ",
   description: "Next.jsとChakra UIで作ったシンプルな時計です。",
+  icons: {
+    // public/appleIcon.png を指定
+    apple: "/appleIcon.png",
+  },
 };
 
 export default function RootLayout({
